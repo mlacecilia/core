@@ -1222,8 +1222,8 @@ HB_FUNC( FI_CONVERTTOTYPE )
 
 /* rotation and flipping */
 
-/* DLL_API FIBITMAP *DLL_CALLCONV FreeImage_RotateClassic(FIBITMAP *dib, double angle); */
-HB_FUNC( FI_ROTATECLASSIC )
+/* DLL_API FIBITMAP *DLL_CALLCONV FreeImage_Rotate(FIBITMAP *dib, double angle); */
+HB_FUNC( FI_ROTATE )
 {
    if( hb_FIBITMAP_is( 1 ) &&
        HB_ISNUM( 2 ) )
@@ -1231,7 +1231,7 @@ HB_FUNC( FI_ROTATECLASSIC )
       FIBITMAP * dib   = hb_FIBITMAP_par( 1 );
       double     angle = hb_parnd( 2 );
 
-      hb_FIBITMAP_ret( FreeImage_RotateClassic( dib, angle ), HB_TRUE );
+      hb_FIBITMAP_ret( FreeImage_Rotate( dib, angle, NULL ), HB_TRUE );
    }
    else
       hb_errRT_BASE_SubstR( EG_ARG, 0, NULL, HB_ERR_FUNCNAME, HB_ERR_ARGS_BASEPARAMS );

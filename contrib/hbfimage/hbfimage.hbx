@@ -90,7 +90,7 @@ DYNAMIC fi_MovePage
 DYNAMIC fi_OpenMultiBitmap
 DYNAMIC fi_Paste
 DYNAMIC fi_Rescale
-DYNAMIC fi_RotateClassic
+DYNAMIC fi_Rotate
 DYNAMIC fi_RotateEx
 DYNAMIC fi_Save
 DYNAMIC fi_SetBackgroundColor
